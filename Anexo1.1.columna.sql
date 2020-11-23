@@ -1,6 +1,6 @@
 --NOMBRE FICHERO: 20111065013001201900.01
 --00:45
-SELECT 
+/*SELECT 
     RUCCOOP||'|'||
     TIPODOCUMENTO||'|'||
     RPAD(NVL(NUMERODOCUMENTO, ' '), 15, ' ')||'|'||
@@ -13,7 +13,7 @@ SELECT
     ANOINFORMADO
     AS CONCATENADO
 FROM
-(
+(*/
     SELECT 
         '20111065013' AS RUCCOOP,   --RUCCOOP
         CASE TIPOPERSONA
@@ -103,5 +103,5 @@ FROM
         ) CS
         WHERE CS.CODIGOPERSONA <> 1
     )
-);
-    
+--)
+;
